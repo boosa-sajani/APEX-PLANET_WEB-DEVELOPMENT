@@ -1,0 +1,117 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #eee792;
+}
+
+
+/* Navbar (Flexbox) */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee792;
+    color: rgb(16, 0, 0);
+    padding: 15px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: rgb(51, 10, 10);
+    text-decoration: none;
+}
+
+
+/* Container (Grid) */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Cards */
+
+.card {
+    background: rgb(225, 206, 206);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Form inputs */
+
+input,
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Button */
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+
+/* To-do list */
+
+ul {
+    margin-top: 15px;
+}
+
+li {
+    background: #dc905a;
+    margin: 5px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
