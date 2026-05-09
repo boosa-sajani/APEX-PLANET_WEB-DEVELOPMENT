@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #e6cece;
+    text-align: center;
+}
+
+
+/* HEADER */
+
+header {
+    background: #76c879;
+    color: rgb(15, 15, 15);
+    padding: 20px;
+}
+
+
+/* GRID LAYOUT */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* CARD */
+
+.card {
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+//* Carousel */
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+
+/* Quiz buttons */
+
+#answers button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+}
+
+
+/* BUTTON */
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #a1f88c;
+    color: rgb(35, 33, 33);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    header h1 {
+        font-size: 22px;
+    }
+}

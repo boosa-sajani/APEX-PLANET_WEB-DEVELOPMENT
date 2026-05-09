@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Web Project</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Advanced Web Project</h1>
+        <p>Responsive | Quiz App | API Integration</p>
+    </header>
+
+    <main class="container">
+
+        <!-- QUIZ SECTION -->
+        <section class="card">
+            <h2>Computer Basics Quiz</h2>
+
+            <div id="quiz-container">
+                <p id="question">Loading question...</p>
+
+                <div id="answers"></div>
+
+                <!--<button id="nextBtn">Next Question</button>-->
+
+                <p id="score"></p>
+            </div>
+        </section>
+
+
+        <!-- IMAGE CAROUSEL -->
+        <section class="card">
+            <h2>Image Carousel</h2>
+
+            <div class="carousel">
+                <img id="carouselImage" src="https://picsum.photos/500/300?1" alt="carousel">
+
+                <div class="controls">
+                    <button onclick="prevImage()">Prev</button>
+                    <button onclick="nextImage()">Next</button>
+                </div>
+            </div>
+        </section>
+        <!-- API SECTION -->
+        <section class="card">
+            <h2>JOKE GENERATOR</h2>
+            <p id="joke">Click below to load a joke</p>
+            <button onclick="getJoke()">Get Joke</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
