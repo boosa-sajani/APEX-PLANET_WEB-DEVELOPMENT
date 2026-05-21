@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">MyPortfolio</h2>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#todo">To-Do</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+        <h2>About Me</h2>
+
+        <img src="sajani.png" alt="Profile Image" class="profile-image">
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>
+                    Hello, I'm a Frontend Developer
+                </h1>
+
+                <p>
+                    I build responsive and interactive web applications using HTML, CSS, and JavaScript.
+                </p>
+                <p>
+                    I am a passionate frontend developer learning modern web technologies and building responsive web applications.
+                </p>
+
+
+                <!-- BUTTON -->
+
+                <a href="#projects">
+
+                    <button>
+                View Projects
+            </button>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </section>
+
+
+
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+
+        <h2>My Projects</h2>
+
+        <div class="grid-container">
+
+            <!-- QUIZ PROJECT -->
+            <div class="card">
+
+                <h3>Quiz App</h3>
+
+                <p>
+                    Interactive quiz using JavaScript.
+                </p>
+
+                <a href="https://github.com/boosa-sajani/peoject_quiz.git" target="_blank">
+
+                    <button>View Project</button>
+
+                </a>
+
+            </div>
+
+
+            <!-- WEATHER API -->
+            <div class="card">
+
+                <h3> IoT-Based Smart Parking</h3>
+
+                <p>
+                    Real-time Parking system using IoT.
+                </p>
+
+                <a href="https://github.com/thanmairapaka08/smartstreetparking" target="_blank">
+
+                    <button>View Project</button>
+
+                </a>
+
+            </div>
+
+
+            <!-- TODO APP 
+            <div class="card">
+
+                <h3>To-Do App</h3>
+
+                <p>
+                    Task management using Local Storage.
+                </p>
+
+                <a href="https://github.com/yourusername/todo-app" target="_blank">
+
+                    <button>View Project</button>
+
+                </a>
+
+            </div>-->
+
+        </div>
+
+    </section>
+
+
+    <!-- TODO APP -->
+    <section id="todo" class="section">
+
+        <h2>To-Do List</h2>
+
+        <div class="todo-box">
+
+            <input type="text" id="taskInput" placeholder="Enter Task">
+
+            <button onclick="addTask()">Add Task</button>
+
+        </div>
+
+        <ul id="taskList"></ul>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+
+        <h2>Product Listing</h2>
+
+        <div class="filter-box">
+
+            <select id="filter" onchange="filterProducts()">
+      <option value="all">All Categories</option>
+      <option value="electronics">Electronics</option>
+      <option value="fashion">Fashion</option>
+    </select>
+
+
+            <select id="sort" onchange="sortProducts()">
+      <option value="default">Sort By</option>
+      <option value="low">Price Low to High</option>
+      <option value="high">Price High to Low</option>
+    </select>
+
+        </div>
+
+
+        <div id="productContainer" class="grid-container"></div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+
+        <h2>Contact Me</h2>
+
+        <form class="contact-form">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 My Portfolio | All Rights Reserved</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
